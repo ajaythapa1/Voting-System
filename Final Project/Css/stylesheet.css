@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  #HeaderSection {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  #HeaderSection h1 {
+    color: #fff;
+    margin: 0;
+  }
+  
+  #BodySection {
+    margin-top: 50px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  input[type="number"],
+  input[type="password"],
+  select {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  #backbtn:hover {
+    background-color: #555;
+  }
+
+  #Loginbtn:hover {
+    background-color: #555;
+  }

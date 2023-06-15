@@ -1,0 +1,107 @@
+
+.Headersection {
+    text-align: center;
+    padding: 30px;
+    background-color: #333;
+}
+
+.Headersection h1 {
+    color: #fff;
+    font-size: 35px;
+  
+  }
+
+.backbtn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #0e285d;
+    color: #fff;
+    font-size: 15px;
+    float: left;
+    border: none;
+    cursor: pointer;
+    background-color: #333;
+}
+
+.backbtn i {
+    margin-right: 5px;
+}
+
+.backbtn:hover {
+    background-color: #555;
+}
+
+.bodysection {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button#Loginbtn {
+    background-color: #0050ec;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: 0.1s ease;
+    border-width: 0;
+    box-shadow: 1px 5px 0 0 #0e285d;
+}
+
+button#Loginbtn:hover {
+    background-color: #555;
+}
+
+button#Loginbtn:active {
+    transform: translateY(4px);
+    box-shadow: 0px 0px 0 0 #0e285d;
+}
+
+a {
+    color: #0050ec;
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #797777;
+}

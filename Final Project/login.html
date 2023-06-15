@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+    <div id="HeaderSection">
+        <a href="index.html"><button id="backbtn" >Back</button></a>
+        <center><h1 style="font-size: 40px;">Online Voting System</h1></center>
+    </div>
+    <hr>
+    <div id="BodySection">
+        <center>
+        <h2 style="font-size: 30px;">Login</h2><br>
+        <form action="php/login.php" method="POST" enctype="multipart/form-data">
+        <input type="number" placeholder="Enter Mobile Number" id="mobile" name="mobile" required><br><br>
+        <input type="password" placeholder="Enter Password" id="password" name="password" required><br><br>
+        <select name="Role" id="dropbox" >Select Role
+           <option value="1">Voter</option>
+           <option value="2">Candidate</option>
+        </select><br><br>
+        <button id="Loginbtn" type="submit"> Login </button> <br><br>
+       <h2 style="font-size: 25px;"> New Here ? <a href="routes/signup.html">Register Here</a></h2>
+    </form>
+</center>
+    </div>
+    
+</body>
+</html>

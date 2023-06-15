@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Voting System Admin Login</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div  class="Headersection">
+        <a href="../index.html"><button class="backbtn" type="button" ><i class="fas fa-arrow-left"></i> Back</button></a>
+        <center><h1>🗳️ Electronics Voting System Admin Login 🗳️</h1></center>
+    </div>
+    <hr>
+
+    <div class="bodysection">
+        <form action="admin_login.php" method="POST" enctype="multipart/form-data" >
+        <center><h2>Admin Login</h2>
+            <label>Username:</label>
+            <input type="text" name="username" placeholder="Enter username"  required><br><br>
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="Enter password"   required><br><br>
+            <label>Select Role:</label>
+            <select class="dropbox" name="role">
+                <option value="3">Admin</option>
+            </center>
+                
+            </select><br><br>
+            <center>
+                <button id="Loginbtn" type="submit">Login</button><br><br>
+            </center>
+            Voter 👉<a href="../login.html">Login here</a>
+        </form>
+    </div>
+
+    <br><br><br><br><br><br>
+    <div>
+        <h4 class="footer">© 2023 E-Voting. All Rights Reserved</h4>
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Voting Successful</title>
+    
+	<style>
+ 
+
+
+
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+		h1 {
+			font-size: 36px;
+			margin-top: 50px;
+			color: #4CAF50;
+			animation: fade-in 0.5s ease-in-out forwards;
+		}
+		.checkmark {
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			display: block;
+			stroke-width: 2;
+			stroke: #4CAF50;
+			stroke-miterlimit: 10;
+			margin: 0 auto;
+			margin-top: 50px;
+			animation: fill 0.5s ease-in-out 0.5s forwards;
+		}
+		.checkmark__circle {
+			fill: none;
+			stroke-width: 3.5;
+			stroke-linecap: round;
+			animation: stroke 0.5s ease-in-out forwards;
+		}
+		.checkmark__check {
+			fill: none;
+			stroke-width: 2;
+			stroke-linecap: round;
+			transform-origin: 50% 50%;
+			animation: stroke 0.5s 0.5s ease-in-out forwards;
+		}
+		p {
+			font-size: 24px;
+			margin-top: 20px;
+			color: #333;
+			opacity: 0;
+			animation: fade-in 0.5s ease-in-out 1s forwards;
+		}
+		.button {
+			display: inline-block;
+			padding: 12px 24px;
+			background-color: #4CAF50;
+			color: white;
+			font-size: 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			margin-top: 50px;
+			text-decoration: none;
+			opacity: 0;
+			animation: fade-in 0.5s ease-in-out 1.5s forwards;
+		}
+		@keyframes stroke {
+			0% {
+				stroke-dashoffset: 56;
+			}
+			100% {
+				stroke-dashoffset: 0;
+			}
+		}
+		@keyframes fill {
+			0% {
+				transform: scale(0);
+			}
+			100% {
+				transform: scale(1);
+			}
+		}
+		@keyframes fade-in {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+	</style>
+</head>
+<body>
+	<svg class="checkmark" viewBox="0 0 52 52">
+		<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+		<path class="checkmark__check" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+	</svg>
+	<h1>Voting Successfully</h1>
+	<p>Thank you for your Vote.</p>
+	<a href="dashboard.php" class="button">Click to Continue</a>
+
+	
+</body>
+</html>

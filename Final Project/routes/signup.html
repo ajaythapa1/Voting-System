@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   
+</head>
+<body>
+    <div id="HeaderSection">
+        <a href="../index.html"><button id="backbtn">Back</button></a>
+        <center><h1>Online Voting System</h1></center>
+    </div>
+    <hr>
+    <center>
+        <h2>Registration</h2><br>
+        <div id="BodySection">
+            <form action="../php/register.php" method="POST" enctype="multipart/form-data" name="myForm" onsubmit="return validateForm()" id="myForm">
+                <div id="name">
+                    <input type="text" name="name" placeholder="Enter Name" autocomplete="name" id="name">
+                    <b><span class="formError"></span></b>
+                </div><br>
+
+                <div id="mobile">
+                    <input type="number" name="mobile" placeholder="Enter number">
+                    <b><span class="formError"></span></b>
+                </div><br>
+
+                <div id="password">
+                    <input type="password" name="password" placeholder="Password">
+                    <b><span class="formError"></span></b>
+                </div><br>
+
+                <div id="cpassword">
+                    <input type="password" name="cpassword" placeholder="Confirm Password">
+                    <b><span class="formError"></span></b>
+                </div><br>
+
+                <div id="email">
+                    <input type="email" name="email" placeholder="E-mail" autocomplete="off">
+                    <b><span class="formError"></span></b>
+                </div><br>
+
+                <input type="text" name="address" placeholder="Address" autocomplete="street-address"><br><br>
+
+                <div class="image-upload">
+                    <label for="photo">Upload Image</label><br>
+                    <input type="file" name="photo" id="photo" onchange="previewImage(event)">
+                    <img id="preview" src="../uploads/img.png" alt="Preview" width="100" height="100">
+                </div>
+                
+                <div id="role">
+                    <h2>Select Your Role:</h2>
+                    <select name="Role">
+                        <option value="1">Voter</option>
+                        <option value="2">Candidate</option>
+                    </select>
+                </div><br>
+
+                <button id="Registerbtn" type="submit">Submit</button><br><br>
+
+                <h2>Already a user? <a href="../login.html">Login Here</a></h2>
+            </form>
+        </div>
+    </center>
+    <script src="signup.js"></script>
+    <script>
+        function previewImage(event) {
+            var input = event.target;
+            var preview = document.getElementById("preview");
+            var reader = new FileReader();
+
+            reader.onload = function () {
+                if (reader.readyState == 2) {
+                    preview.src = reader.result;
+                }
+            };
+
+            if (input.files && input.files[0]) {
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+</body>
+</html>

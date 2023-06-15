@@ -1,0 +1,52 @@
+#HeaderSection {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+#loginbtn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-style: 16px;
+    float: right;
+    margin: 25px;
+}
+
+#loginbtn:hover {
+    background-color: #555;
+}
+
+#Profile {
+    background-color: white;
+    width: 30%;
+    padding: 20px;
+    float: left;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#Candidate {
+    background-color: white;
+    color: black;
+    width: 60%;
+    padding: 10px;
+    float: right;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#votebtn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-size: 15px;
+    margin: 15px;
+}
+
+#pannel {
+    padding: 10px;
+}
